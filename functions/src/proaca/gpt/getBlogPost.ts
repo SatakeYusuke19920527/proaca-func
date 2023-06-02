@@ -18,6 +18,5 @@ export const getBlogPost = regionFunctions
     // theme を get
     const theme: any = await getTheme();
     const collectionRef = db.collection('theme');
-    const res = await collectionRef.add({ there: theme, isPost: false });
-    console.log('🚀 ~ file: getBlogPost.ts:21 ~ .https.onCall ~ res:', res);
+    await collectionRef.add({ theme });
   });
