@@ -1,0 +1,1 @@
+export { getBlogPost } from './getBlogPost';
